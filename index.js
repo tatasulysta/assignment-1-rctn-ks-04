@@ -47,12 +47,15 @@ buttons.forEach((butt) => {
         arrow = 1;
       }
     }
-    if (!arr[0]) {
-      view.innerHTML = "0";
-    } else if (arr[0] && arr[1] && arr[2] && el === "=") {
+    if (
+      (arr[0] && arr[1] && arr[2] && el === "=") ||
+      (arr[0] && arr[1] && arr[2])
+    ) {
       arrow = 0;
       view.innerHTML = `${[...arr].join(" ")} = ${calculate()}`;
       arr = [calculate(), "", ""];
+    } else if (!arr[0]) {
+      view.innerHTML = "0";
     } else if (el === "AC") {
       view.innerHTML = "0";
     } else {
