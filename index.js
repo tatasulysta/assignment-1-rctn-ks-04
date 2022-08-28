@@ -49,12 +49,16 @@ buttons.forEach((butt) => {
     }
     if (!arr[0]) {
       view.innerHTML = "0";
-    } else if (arr[0] && arr[1] && arr[2] && el === "=") {
-      arrow = 0;
+    } else if (arr[0] && arr[1] && arr[2] && "+-/*".includes(el)) {
       view.innerHTML = `${[...arr].join(" ")} = ${calculate()}`;
-      arr = [calculate(), "", ""];
+      arr = [calculate(), el, ""];
+      arrow = 2;
     } else if (el === "AC") {
       view.innerHTML = "0";
+    } else if (arr.every((arr) => arr != "") && el === "=") {
+      view.innerHTML = calculate();
+      arr = ["", "", ""];
+      arrow = 0;
     } else {
       view.innerHTML = `${[...arr].join(" ")}`;
     }
