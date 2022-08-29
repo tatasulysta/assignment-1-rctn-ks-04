@@ -42,7 +42,7 @@ buttons.forEach((butt) => {
         arrow !== 1 ? (arr[arrow] = "") : "";
       } else if (el === "AC") {
         arr = ["", "", ""];
-      } else {
+      } else if (!arr[2]) {
         arr[1] = el;
         arrow = 1;
       }
