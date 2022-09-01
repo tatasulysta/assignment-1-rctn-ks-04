@@ -9,13 +9,15 @@ export default class Navbar extends Component {
         </p>
         <nav className={styles.nav}>
           <ul>
+            <span>
+              <li>
+                <a href="/">Create Meetup</a>
+              </li>
+              <li>
+                <a href="/">Explore</a>
+              </li>
+            </span>
             <li>
-              <a href="/">Create Meetup</a>
-            </li>
-            <li>
-              <a href="/">Explore</a>
-            </li>
-            <li className={styles.right} style={{ float: "right" }}>
               <a href="/">Login</a>
             </li>
           </ul>
