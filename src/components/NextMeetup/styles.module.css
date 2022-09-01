@@ -1,0 +1,15 @@
+.container {
+  background-color: var(--gray);
+  padding: 20px;
+}
+.title {
+  font-weight: 600;
+}
+.container p {
+  font-weight: 500;
+  font-size: small;
+}
+.date {
+  font-size: 14px;
+  color: gray;
+}

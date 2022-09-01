@@ -1,0 +1,20 @@
+.container {
+  background-color: var(--gray);
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+.img_wrapper {
+  background-color: var(--dark-gray);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.wrapper {
+  font-weight: 500;
+}
+
+.child {
+  margin-top: 5px;
+  font-size: 14px;
+}

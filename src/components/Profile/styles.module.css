@@ -1,0 +1,19 @@
+.table > td {
+  padding-right: 30px;
+  padding-top: 15px;
+}
+
+.img {
+  background-color: #bdbdbd;
+  width: 200px;
+  height: 200px;
+}
+.container {
+  background-color: #c4c4c4;
+  width: 95%;
+  border: none;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  margin: 20px auto;
+}

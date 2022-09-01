@@ -1,0 +1,14 @@
+.container {
+  width: 25%;
+  font-weight: 500;
+  background-color: var(--gray);
+  padding: 20px;
+}
+
+.line {
+  background-color: black;
+}
+.went {
+  color: gray;
+  font-weight: 400;
+}
