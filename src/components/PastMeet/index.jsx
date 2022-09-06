@@ -25,7 +25,7 @@ export default class Past extends Component {
   render() {
     return (
       <Container name="Past Meetups" see="See all">
-        <div style={{ display: "flex", gap: "50px" }}>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
           {this.state.length > 1 ? (
             this.state.map((data) => <PastCard data={data} />)
           ) : (
