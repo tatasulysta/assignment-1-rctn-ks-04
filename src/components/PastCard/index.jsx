@@ -3,13 +3,14 @@ import styles from "./styles.module.css";
 import Button from "../Button";
 export default class PastCard extends Component {
   render() {
+    const { date, description, people } = this.props.data;
     return (
       <div className={styles.container}>
-        <p>{this.props.date}</p>
+        <p>{date}</p>
         <hr className={styles.line} />
-        <p>{this.props.description}</p>
+        <p>{description}</p>
         <p>
-          {this.props.people} &nbsp;
+          {people} &nbsp;
           <span className={styles.went}>went</span>
         </p>
         <Button>View</Button>
