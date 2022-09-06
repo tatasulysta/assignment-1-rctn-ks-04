@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import styles from "./styles.module.css";
 import Button from "../Button";
-
+import Title from "../Title";
+import Image from "../Image";
 export default class Profile extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <div className={styles.img}>
-          <img src="" alt="" srcset="" />
-        </div>
+        <Image src="" />
         <div>
-          <b>Hacktiv8 Meetup</b>
+          <Title>Hacktiv8 Meetup</Title>
           <tr className={styles.table}>
             <td>Location</td>
             <td>Jakarta, Indonesia</td>

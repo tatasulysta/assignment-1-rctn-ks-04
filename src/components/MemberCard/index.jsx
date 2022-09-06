@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import styles from "./styles.module.css";
+import Image from "../Image";
 export default class MemberCard extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <div className={styles.img_wrapper}>
-          <img src={this.props.img} alt="" srcset="" />
-        </div>
+        <Image src="" variant="round" />
         <div className={styles.wrapper}>
           {this.props.role}
           <div className={styles.child}>
